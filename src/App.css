@@ -1,0 +1,54 @@
+@charset "uft-8";
+
+
+:root {
+  --brand: #3a6f43;
+  --brand2: #8eb486;
+  --brown: #685752;
+  --point: #cd5c08;
+  --cream: #fff5e4;
+  --white: #fff;
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.wrap {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  background: var(--white);
+}
+
+/* header */
+header {
+  background: var(--white);
+}
+
+header .top-area {
+  display: flex;
+  justify-content: center;
+  padding: 15px 20px;
+}
+
+.top-area .logo a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.top-area .logo img {
+  width: 50px;
+  margin-right: 12px;
+}
+
+.top-area .logo span:nth-child(2) {
+  color: var(--brand);
+}
+
+.top-area .logo span:last-child {
+  color: var(--point);
+}
