@@ -6,7 +6,7 @@ function Home() {
   const [recs, setRecs] = useState([]);
 
   useEffect(() => {
-    fetch('/db.json')
+    fetch(`${import.meta.env.BASE_URL}db.json`)
       .then((reponse) => reponse.json())
       .then((data) => {
         const meals = data.meals || []; //or 연산자로 넘겨받은 데이터가 있으면 data.meals 사용 / 없으면 [] 사용
